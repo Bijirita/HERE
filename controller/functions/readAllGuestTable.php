@@ -4,11 +4,11 @@
     $data = $conn->query($searchAllGuests);
     $stmt = $data->fetchAll(PDO::FETCH_ASSOC);
     $rowLength = $data->columnCount();
-    echo "<table id='oldCust' class='custForm'>";
+    echo "<table class='custForm'>";
 
     for ($i = 0; $i < $rowLength; $i++) {
         $newCol = $data->getColumnMeta($i);
-        $columns = $newCol['name'];s
+        $columns = $newCol['name'];
         echo "<th>" . $columns . "</th>";
     }
 
