@@ -1,0 +1,33 @@
+html, body {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#87e0fd+0,53cbf1+40,05abe0+83 */
+    background: rgb(135,224,253); /* Old browsers */
+    background: -moz-linear-gradient(left, rgb(135,224,253) 0%, rgb(83,203,241) 40%, rgb(5,171,224) 83%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgb(135,224,253) 0%,rgb(83,203,241) 40%,rgb(5,171,224) 83%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgb(135,224,253) 0%,rgb(83,203,241) 40%,rgb(5,171,224) 83%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#05abe0',GradientType=1 ); /* IE6-9 */
+	margin: 0;
+	padding: 0;
+	background-attachment: fixed;
+	background-position: 50% 50%;
+	background-size: cover;
+}
+#psw {
+	text-decoration: underline;
+}
+#psw:hover {
+	text-decoration: none;
+}
+.body {
+	max-width: 600px;
+	margin: 20px;
+	padding: 40px;
+}
+.body-s {
+	max-width: 400px;
+}
+@media screen and (max-width: 600px) {
+	.body {
+		padding: 20px;
+	}
+}
+

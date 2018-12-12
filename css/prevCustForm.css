@@ -1,0 +1,294 @@
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+body {
+	color:#777;
+}
+/**/
+/* defaults */
+/**/
+.custForm {
+	margin: 0;
+	outline: none;
+	box-shadow: 0 0 20px rgba(0,0,0,.3);
+	font: 13px/1.55 'Open Sans', Helvetica, Arial, sans-serif;
+	color: rgb(102, 102, 102);
+	background:#f5f5f5;
+	color:#777;
+}
+.custForm * {
+	margin: 0;
+	padding: 0;
+}
+.custForm header {
+	display: block;
+	padding: 20px 30px;	
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	background: rgba(248,248,248,.9);
+	font-size: 25px;
+	font-weight: 300;
+	color: #232323;
+}
+.custForm fieldset {
+	display: block;	
+	padding: 25px 30px 5px;
+	border: none;
+	background: rgba(255,255,255,.9);
+}
+.custForm fieldset + fieldset {
+	border-top: 1px solid rgba(0,0,0,.1);
+}
+.custForm section {
+	margin-bottom: 20px;
+}
+
+.custForm a {
+	color:#777;
+}
+.custForm .label {
+	display: block;
+	margin-bottom: 6px;
+	line-height: 19px;
+}
+.custForm .label.col {
+	margin: 0;
+	padding-top: 10px;
+}
+
+.custForm .input,
+.custForm .textarea,
+.custForm .toggle,
+.custForm .button {
+	position: relative;
+	display: block;
+}
+.custForm .input input,
+.custForm .textarea textarea {
+	display: block;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	height: 39px;
+	padding: 8px 10px;
+	outline: none;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 0;
+	background: #fff;
+	font: 15px/19px 'Open Sans', Helvetica, Arial, sans-serif;
+	color: #404040;
+	appearance: normal;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+
+.custForm .toggle i:before {
+	content: '';
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	display: block;
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
+	opacity: 1;
+	transition: right 0.2s;
+	-o-transition: right 0.2s;
+	-ms-transition: right 0.2s;
+	-moz-transition: right 0.2s;
+	-webkit-transition: right 0.2s;
+}
+.custForm .toggle input:checked + i:after {
+	content: 'ON';
+	text-align: right;
+}
+.custForm .toggle input:checked + i:before {
+	right: 36px;
+}
+
+
+/**/
+/* buttons */
+/**/
+.custForm .button {
+	float: right;
+	height: 39px;
+	overflow: hidden;
+	margin: 10px 0 0 20px;
+	padding: 0 25px;
+	outline: none;
+	border: 0;
+	font: 300 15px/39px 'Open Sans', Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+}
+  
+  /**/
+  /* grid */
+  /**/
+  .custForm .row {
+      margin: 0 -15px;
+  }
+  .custForm .row:after {
+      content: '';
+      display: table;
+      clear: both;
+  }
+  .custForm .col {
+      float: left;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+  }
+  .custForm .col-1 {
+      width: 8.33%;
+  }
+  .custForm .col-2 {
+      width: 16.66%;
+  }
+  .custForm .col-3 {
+      width: 25%;
+  }
+  .custForm .col-4 {
+      width: 33.33%;
+  }
+  .custForm .col-5 {
+      width: 41.66%;
+  }
+  .custForm .col-6 {
+      width: 50%;
+  }
+  .custForm .col-8 {
+      width: 66.67%;
+  }
+  .custForm .col-9 {
+      width: 75%;
+  }
+  .custForm .col-10 {
+      width: 83.33%;
+  }
+  @media screen and (max-width: 600px) {
+      .custForm .col {
+          float: none;
+          width: 100%;
+      }
+  }
+  
+
+/**/
+/* normal state */
+/**/
+.custForm .input input,
+.custForm .textarea textarea,
+.custForm .icon-append,
+.custForm .icon-prepend {
+	border-color: #e5e5e5;
+	transition: border-color 0.3s;
+	-o-transition: border-color 0.3s;
+	-ms-transition: border-color 0.3s;
+	-moz-transition: border-color 0.3s;
+	-webkit-transition: border-color 0.3s;
+}
+.custForm .toggle i:before {
+	background-color: #2da5da;	
+}
+.custForm .rating label {
+	color: #ccc;
+	transition: color 0.3s;
+	-o-transition: color 0.3s;
+	-ms-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	-webkit-transition: color 0.3s;
+}
+.custForm .button {
+	background-color: #2da5da;
+	opacity: 0.8;
+	transition: opacity 0.2s;
+	-o-transition: opacity 0.2s;
+	-ms-transition: opacity 0.2s;
+	-moz-transition: opacity 0.2s;
+	-webkit-transition: opacity 0.2s;
+}
+.custForm .button.button-secondary {
+	background-color:rgb(121, 190, 107);
+}
+.custForm .icon-append,
+.custForm .icon-prepend {
+	color: #ccc;
+}
+
+
+/**/
+/* hover state */
+/**/
+.custForm .input:hover input,
+.custForm .toggle:hover i {
+	border-color: #8dc9e5;
+}
+.custForm .rating input + label:hover,
+.custForm .rating input + label:hover ~ label {
+	color: #2da5da;
+}
+.custForm .button:hover {
+	opacity: 1;
+}
+
+#closeButton{
+	float: right;
+	margin: 4px;
+	padding: 8px;
+	border: 2px;
+
+}
+
+#switch[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+#switch {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 80px;
+	height: 40px;
+	background: grey;
+	display: block;
+	border-radius: 100px;
+	position: relative;
+}
+
+#switch:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 30px;
+	height: 30px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+#switch:checked + label {
+	background: lightgreen;
+}
+
+#switch:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+#switch:active:after {
+	width: 130px;
+}
+
+// centering
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
