@@ -4,7 +4,7 @@
     $data = $conn->query($searchAllGuests);
     $stmt = $data->fetchAll(PDO::FETCH_ASSOC);
     $rowLength = $data->columnCount();
-    echo "<table class='db-table'>";
+    echo "<table class='custForm'>";
 
     for ($i = 0; $i < $rowLength; $i++) {
         $newCol = $data->getColumnMeta($i);
