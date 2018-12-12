@@ -19,8 +19,8 @@
             echo "<td>" . $row[$keys[$i]] . "</td>";
         }
         $id = $row[$keys[0]];
-        echo '<td> <a href="Search.php' . "?id=$id\"" . 'class="del_btn">' .  'Delete' . '</a></td>';
-        // echo '<td> <a href="zipDxedit.php' . "?submission_id=$id\"" . 'class="edit_btn">' .  'Edit' . '</a></td>';
+        echo '<td> <a href="controller/functions/deleteObject.php' . "?id=$id\"" . 'class="del_btn">' .  'Delete' . '</a></td>';
+        echo '<td> <a href="controller/functions/editObject.php' . "?id=$id\"" . 'class="del_btn">' .  'Update' . '</a></td>';
         }
     echo "</table>";
 
