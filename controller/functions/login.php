@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
     global $conn;
     $username = $_POST['user'];
     $password = $_POST['password'];
@@ -26,4 +26,4 @@
         }
     }
 
-?>
+?> -->

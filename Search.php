@@ -8,19 +8,19 @@
     }else if (isset($_GET['id'])) {
         include 'controller/functions/readAllGuestTable.php';
     }
-?>
 
 
 
-     <!-- <script>
-            $(".drop")
-            .mouseover(function() {
-            $(".dropdown").show(300);
-            });
-            $(".drop")
-            .mouseleave(function() {
-            $(".dropdown").hide(300);     
-            });
-        </script> -->
-        
+
+    //  <!-- <script>
+    //         $(".drop")
+    //         .mouseover(function() {
+    //         $(".dropdown").show(300);
+    //         });
+    //         $(".drop")
+    //         .mouseleave(function() {
+    //         $(".dropdown").hide(300);     
+    //         });
+    //     </script> -->
+        ?>
  <?php include 'Views/footer.php'?>
